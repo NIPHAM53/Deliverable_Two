@@ -19,9 +19,33 @@ public class CountingHeadsOrTails {
 		valid = true;
 		System.out.println("How many times shall we flip");
 		int numberOfFlips = scnr.nextInt();
-		
-		}
-		}
+		int tailCount = 0;
+		int headCount = 0;
+		for (int i=0; i < numberOfFlips; i++) {
+			int flip = (int) (Math.random() * 2);
+			if (flip == 0) {
+				System.out.println("Heads");
+				headCount++;																																																	
+			}else 
+				System.out.println("Tails");
+				tailCount++;
+		} 
+	int correctCount = numberOfFlips - headCount;
+	if (headsorTailsGuess.equals("Tails")) {
+		System.out.println("Your Guess, " + headsorTailsGuess + ", came up " + correctCount + " " +  "time(s).");
+	} else {
+		System.out.println("Your Guess, " + headsorTailsGuess + ", came up " + (numberOfFlips - correctCount) + " " +  "time(s)");
 	}
+	
+	}
+			
+	}
+	}	
+	}
+		
+		
+		
+		
+	
 
-}
+
