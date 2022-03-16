@@ -10,12 +10,18 @@ public class CountingHeadsOrTails {
 	String headsorTailsGuess = scnr.nextLine();
 	if (headsorTailsGuess.equals("Heads") || headsorTailsGuess.equals("Tails")) {
 	valid = true;
-	}else {
+	} else {
 		System.out.println("You must choose Heads or Tails and spell it exactly how it is written.");
 			
 		
 	}
-	
+	if (headsorTailsGuess.equals("Heads") || headsorTailsGuess.equals("Tails")) {
+		valid = true;
+		System.out.println("How many times shall we flip");
+		int numberOfFlips = scnr.nextInt();
+		
+		}
+		}
 	}
 
-}}
+}
