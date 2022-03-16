@@ -4,11 +4,18 @@ public class CountingHeadsOrTails {
 
 	public static void main(String[] args) {
 	System.out.println("Guess which will have more: Heads or Tails?");
+	boolean valid = false;
+	while (!valid) {
 	Scanner scnr = new Scanner(System.in); 
 	String headsorTailsGuess = scnr.nextLine();
-	System.out.println("How many times shall we flip the coin?");
-	int numberOfFlips = scnr.nextInt();
-	int random = (int)(Math.random()*2);
+	if (headsorTailsGuess.equals("Heads") || headsorTailsGuess.equals("Tails")) {
+	valid = true;
+	}else {
+		System.out.println("You must choose Heads or Tails and spell it exactly how it is written.");
+			
+		
+	}
+	
 	}
 
-}
+}}
