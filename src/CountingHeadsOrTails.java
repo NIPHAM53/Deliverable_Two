@@ -31,11 +31,14 @@ public class CountingHeadsOrTails {
 				tailCount++;
 		} 
 	int correctCount = numberOfFlips - headCount;
+	float percentage;
+	percentage = (float)((correctCount*100)/numberOfFlips);
 	if (headsorTailsGuess.equals("Tails")) {
-		System.out.println("Your Guess, " + headsorTailsGuess + ", came up " + correctCount + " " +  "time(s).");
+		System.out.println("Your Guess, " + headsorTailsGuess + ", came up " + correctCount + " " +  "time(s) ." + "That's" + " " + percentage + "%");
 	} else {
-		System.out.println("Your Guess, " + headsorTailsGuess + ", came up " + (numberOfFlips - correctCount) + " " +  "time(s)");
+		System.out.println("Your Guess, " + headsorTailsGuess + ", came up " + (numberOfFlips - correctCount) + " " +  "time(s) ." + "That's" + " " + (100-percentage) + "%");
 	}
+	
 	
 	}
 			
